@@ -1,38 +1,21 @@
-# diyo
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,samples, guidance on mobile development, and a full API reference.
-=======
-# 📱 Daily Routine Manager App
+# 📱diyo : Daily Routine Manager App
 
 ## 📌 Overview
 
-The Daily Routine Manager App is a Flutter-based mobile application designed to help users plan, manage, and track their daily activities efficiently. The application emphasizes usability, clean architecture, and real-world functionality by integrating persistent storage, API communication, and device-level features.
+The **Daily Routine Manager App** is a Flutter-based mobile application designed to help users efficiently plan, manage, and track their daily activities. It emphasizes productivity, structured navigation, clean architecture, and real-world mobile development practices.
 
-This project was developed as part of an academic requirement to demonstrate core mobile application development concepts using Flutter.
+This project was developed as part of an academic requirement to demonstrate key concepts in **mobile application development using Flutter**, including state management, persistent storage, API integration, and device feature utilization.
 
 ---
 
 ## 🎯 Key Objectives
 
-* Design a user-friendly mobile interface
-* Implement structured navigation across multiple screens
-* Apply scalable state management techniques
-* Persist user data locally
-* Integrate external APIs and handle asynchronous data
-* Utilize device features such as notifications
+* Develop an intuitive and user-friendly mobile interface
+* Implement structured multi-screen navigation
+* Apply scalable state management using Provider
+* Enable local data persistence for routines
+* Integrate external APIs for dynamic content
+* Utilize device features such as notifications and alarms
 
 ---
 
@@ -41,40 +24,37 @@ This project was developed as part of an academic requirement to demonstrate cor
 ### 🧩 User Interface
 
 * Clean and responsive UI design
-* Custom reusable widgets
-* Form handling with validation
-* Feedback mechanisms:
-
-  * Snackbars
-  * Dialogs
+* Reusable custom widgets
+* Form validation for user input
+* User feedback via Snackbars and Dialogs
 
 ---
 
-### 🔄 Navigation
+### 🔄 Navigation System
 
-* Multi-screen navigation using Flutter Navigator
-* Seamless transitions between:
+* Flutter Navigator-based multi-screen flow
+* Smooth transitions between:
 
   * Home Screen
   * Add Routine Screen
   * Edit Routine Screen
-  * Detail Screen
-* Data passed between screens efficiently
+  * Routine Detail Screen
+* Efficient data transfer between screens
 
 ---
 
 ### 🧠 State Management
 
-* Local state managed using setState()
-* Global state managed using Provider
-* Centralized data flow for routines and UI updates
+* Local state handled using `setState`
+* Global state managed using **Provider**
+* Centralized and reactive data flow across the application
 
 ---
 
 ### 💾 Data Persistence
 
-* Local database/file storage implementation
-* CRUD operations:
+* Local database / file-based storage
+* Full CRUD functionality:
 
   * Create routines
   * Read routines
@@ -85,21 +65,22 @@ This project was developed as part of an academic requirement to demonstrate cor
 
 ### 🌐 API Integration
 
-* REST API consumption
-* JSON parsing and data modeling
-* Error handling and loading states
+* REST API integration for dynamic content
+* JSON parsing and model mapping
+* Robust error handling and loading states
 
 ---
 
-### 📱 Device Features
+### 📱 Device Integration
 
-* Notification and/or alarm integration
-* Permission handling for device access
+* Local notifications and alarms
+* Permission handling for device services
 
 ---
 
-## 🏗 Project Structure
+## 🏗️ Project Structure
 
+```bash
 daily_routine_app/
 ├── lib/
 │   ├── main.dart
@@ -119,7 +100,6 @@ daily_routine_app/
 │   │   ├── database_service.dart
 │   │   ├── api_service.dart
 │   │   └── notification_service.dart
-│   │
 │   ├── widgets/
 │   │   ├── routine_card.dart
 │   │   ├── custom_app_bar.dart
@@ -136,19 +116,18 @@ daily_routine_app/
 ├── android/
 ├── ios/
 ├── pubspec.yaml
-├── README.md
 └── app-release.apk
-
+```
 
 ---
 
 ## ⚙️ Tech Stack
 
-* Framework: Flutter
-* Language: Dart
-* State Management: Provider
-* Storage: Local database / file system
-* API Handling: HTTP / REST
+* **Framework:** Flutter
+* **Language:** Dart
+* **State Management:** Provider
+* **Local Storage:** SQLite / File System
+* **Networking:** REST API (HTTP)
 
 ---
 
@@ -164,30 +143,37 @@ daily_routine_app/
 
 ### Installation
 
+```bash
 git clone https://github.com/Ninoki78/daily-routine-manager.git
 cd daily_routine_app
 flutter pub get
 flutter run
+```
 
 ---
 
 ## 📦 Build APK
 
+```bash
 flutter build apk --release
+```
 
-Output Location:
+**Output Location:**
 
+```
 build/app/outputs/flutter-apk/app-release.apk
+```
 
 ---
 
 ## 🧪 Testing Strategy
 
-* Manual testing on emulator and real device
-* Validation of user inputs
+* Manual testing on emulator and real devices
+* Input validation testing
 * API response verification
 * Edge case handling:
-* Empty data states
+
+  * Empty states
   * Network failures
   * Invalid inputs
 
@@ -195,41 +181,36 @@ build/app/outputs/flutter-apk/app-release.apk
 
 ## 🎥 Demo & Presentation
 
-👉 Presentation Video Link:
-[]
-
-👉 APK Download:
-[]
-
+* 🎬 **Presentation Video:** [Add Link Here]
+* 📱 **APK Download:** [Add Link Here]
 
 ---
 
 ## 👥 Team Contributions
 
-## 👥 Team Contributions
+| Name              | ID      | Responsibility                  |
+| ----------------- | ------- | ------------------------------- |
+| Mesnanat Teshager |         | UI Screens and Design           |
+| Tinsaye Gezahegn  | 1005/15 | Navigation & State Management   |
+| Eldana Tesfahun   | 0357/15 | Database & Data Persistence     |
+| Nebil Abdo        | 0812/15 | Notifications & Device Features |
+|                   |         | API Integration & Utilities     |
 
-| Member              | ID       | Responsibility                  |
-| ------------------- | -------- |-------------------------------- |
-| Mesnanat Teshager   |          | UI Screens and Design          |
-| Tinsaye Gezahegn    | 1005/15  | Navigation & State Management  |
-| Eldana Tesfahun     | 0357/15  | Database & Data Persistence    |
-| Nebil Abdo      | 0812     | Notifications & Device Features |
-|                     |          | API Integration and Utilities  |
 ---
 
-## 🧭 Navigation & State Flow (Highlight Section)
+## 🧭 Architecture: Navigation & State Flow
 
-The application follows a structured flow:
+The application follows a structured and reactive flow:
 
 1. User interacts with UI (e.g., adds a routine)
-2. Action triggers Provider
+2. Action is handled by Provider
 3. Provider updates application state
-4. Data is stored persistently
-5. UI rebuilds automatically via listeners
+4. Data is persisted in local storage
+5. UI automatically rebuilds using listeners
 
 This ensures:
 
-* Consistent data across screens
+* Consistent state across screens
 * Scalable architecture
 * Clean separation of concerns
 
@@ -237,36 +218,32 @@ This ensures:
 
 ## ⚠️ Challenges & Solutions
 
-| Challenge               | Solution                                   |
-| ----------------------- | ------------------------------------------ |
-| State synchronization   | Implemented Provider for centralized state |
-| Navigation data passing | Used constructor-based argument passing    |
-| API errors              | Added proper error handling & UI feedback  |
+| Challenge               | Solution                                    |
+| ----------------------- | ------------------------------------------- |
+| State synchronization   | Implemented Provider for centralized state  |
+| Navigation data passing | Constructor-based argument passing          |
+| API failures            | Added error handling and fallback UI states |
 
 ---
 
 ## 📌 Future Improvements
 
 * Cloud synchronization
-* User authentication
-* Advanced analytics (routine tracking insights)
+* User authentication system
+* Advanced analytics dashboard
 * Cross-platform enhancements
 
 ---
 
 ## 📎 Submission Checklist
 
-* ✔️ Source Code (GitHub Repository)
-* ✔️ APK File
-* ✔️ Documentation (README)
-* ✔️ Demo Video
+* ✔ Source Code (GitHub Repository)
+* ✔ APK File
+* ✔ Documentation (README)
+* ✔ Demo Video
 
 ---
 
 ## 📜 License
 
-This project is for educational purposes only.
-
-docs.flutter.dev (https://docs.flutter.dev/get-started/learn-flutter)
-Learn Flutter
-Find everything you need to start building Flutter apps.
+This project is developed for **educational purposes only**.
