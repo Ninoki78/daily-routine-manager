@@ -1,3 +1,20 @@
+# diyo
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,samples, guidance on mobile development, and a full API reference.
+=======
 # 📱 Daily Routine Manager App
 
 ## 📌 Overview
@@ -88,16 +105,41 @@ daily_routine_app/
 ├── lib/
 │   ├── main.dart
 │   ├── models/
+│   │   └── routine.dart
 │   ├── providers/
+│   │   ├── routine_provider.dart
+│   │   └── theme_provider.dart
 │   ├── screens/
+│   │   ├── home_screen.dart
+│   │   ├── add_routine_screen.dart
+│   │   ├── edit_routine_screen.dart
+│   │   ├── routine_detail_screen.dart
+│   │   ├── settings_screen.dart
+│   │   └── notification_history_screen.dart
 │   ├── services/
+│   │   ├── database_service.dart
+│   │   ├── api_service.dart
+│   │   └── notification_service.dart
+│   │
 │   ├── widgets/
+│   │   ├── routine_card.dart
+│   │   ├── custom_app_bar.dart
+│   │   ├── loading_indicator.dart
+│   │   ├── empty_state.dart
+│   │   └── error_state.dart
 │   └── utils/
+│       ├── constants.dart
+│       ├── helpers.dart
+│       └── theme.dart
 ├── assets/
+│   └── icon/
+│       └── app_icon.png
 ├── android/
 ├── ios/
 ├── pubspec.yaml
-└── README.md
+├── README.md
+└── app-release.apk
+
 ```
 
 ---
@@ -173,13 +215,15 @@ build/app/outputs/flutter-apk/app-release.apk
 
 ## 👥 Team Contributions
 
-| Member            |    ID   | Responsibility                  |
-| ----------------- | ------- |-------------------------------- |
-| Mesnanat Teshager |         | UI Screens and Design           |
-| Tinsaye Gezahegn  | 1005/15 | Navigation & State Management   |
-| Eldana Tesfahun   |         | Database & Data Persistence     | 
-|                   |         | API Integration and Utilities   | 
-|                   |         | Notifications & Device Features | 
+## 👥 Team Contributions
+
+| Member              | ID       | Responsibility                  |
+| ------------------- | -------- |-------------------------------- |
+| Mesnanat Teshager   |          | UI Screens and Design          |
+| Tinsaye Gezahegn    | 1005/15  | Navigation & State Management  |
+| Eldana Tesfahun     | 0357/15  | Database & Data Persistence    |
+| Nebil Abdo          | 0812/15  | Notifications & Device Features |
+|                     |          | API Integration and Utilities  |
 ---
 
 ## 🧭 Navigation & State Flow (Highlight Section)
