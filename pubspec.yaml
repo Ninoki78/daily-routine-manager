@@ -1,0 +1,48 @@
+name: diyo
+description: Daily Routine Management with Smart Notifications - A Flutter application for organizing daily activities with intelligent reminders.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Local Database
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # Notifications
+  flutter_local_notifications: ^21.0.0  
+  timezone: ^0.11.0
+  # API Integration
+  http: ^1.1.0
+  
+  # Date/Time Formatting
+  intl: ^0.18.1
+  
+  # Permission Handler
+  permission_handler: ^11.1.0
+  
+  # Time Picker
+  flutter_time_picker_spinner: ^2.0.0
+  
+  # UUID Generator
+  uuid: ^4.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  # Add assets here if needed
+  # assets:
+  #   - assets/images/
