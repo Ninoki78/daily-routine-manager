@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: daily_routine_app
+=======
+name: diyo
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 description: Daily Routine Management with Smart Notifications - A Flutter application for organizing daily activities with intelligent reminders.
 publish_to: 'none'
 version: 1.0.0+1
@@ -18,6 +22,7 @@ dependencies:
   path: ^1.8.3
   
   # Notifications
+<<<<<<< HEAD
   flutter_local_notifications: ^18.0.1
   timezone: ^0.9.4
   # API Integration
@@ -36,6 +41,21 @@ dependencies:
 
   android_alarm_manager_plus: ^4.0.4
 
+=======
+  flutter_local_notifications: ^21.0.0  
+  timezone: ^0.11.0
+  # API Integration
+  http: ^1.1.0
+  
+  # Date/Time Formatting
+  intl: ^0.18.1
+  
+  # Permission Handler
+  permission_handler: ^11.1.0
+  
+  # Time Picker
+  flutter_time_picker_spinner: ^2.0.0
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
   
   # UUID Generator
   uuid: ^4.2.1
@@ -44,13 +64,17 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1
+<<<<<<< HEAD
   flutter_launcher_icons: ^0.13.1  # Add this line
+=======
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 
 flutter:
   uses-material-design: true
   
   # Add assets here if needed
   # assets:
+<<<<<<< HEAD
   #   - assets/images/
 
 flutter_launcher_icons:
@@ -60,3 +84,6 @@ flutter_launcher_icons:
   adaptive_icon_background: "#6C63FF"  # Your brand color
   adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
   min_sdk_android: 21
+=======
+  #   - assets/images/
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41

@@ -6,7 +6,11 @@ plugins {
 
 android {
     namespace = "com.example.daily_routine_app"
+<<<<<<< HEAD
     compileSdk = 36
+=======
+    compileSdk = 34
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true

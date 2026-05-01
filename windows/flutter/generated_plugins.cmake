@@ -7,6 +7,10 @@ list(APPEND FLUTTER_PLUGIN_LIST
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
+<<<<<<< HEAD
+=======
+  flutter_local_notifications_windows
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)

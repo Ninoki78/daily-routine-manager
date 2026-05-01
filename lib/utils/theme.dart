@@ -4,7 +4,11 @@ class AppTheme {
   static final ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.light,
+<<<<<<< HEAD
     colorSchemeSeed: Colors.blue,
+=======
+    colorSchemeSeed: Colors.deepPurple,
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
     appBarTheme: const AppBarTheme(
       centerTitle: true,
       elevation: 0,

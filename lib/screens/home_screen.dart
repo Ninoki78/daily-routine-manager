@@ -328,7 +328,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         _buildSocialIcon(Icons.share, Colors.blue),
                       ],
                     ),
+<<<<<<< HEAD
                     const SizedBox(height: 8),
+=======
+                    const SizedBox(height: 12),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                     Text(
                       'Made with ❤️ in Flutter',
                       style: TextStyle(color: Colors.grey[400], fontSize: 12),
@@ -414,6 +418,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   // 📱 APP BAR WITH HAMBURGER MENU
   // =============================================
   Widget _buildPremiumSliverAppBar(ThemeData theme) {
+<<<<<<< HEAD
     final greeting = Helpers.getGreeting();
     final hour = DateTime.now().hour;
     final emoji = hour < 12 ? '🌅' : hour < 17 ? '☀️' : '🌙';
@@ -573,10 +578,120 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   ),
                                 ),
                               ],
+=======
+  final greeting = Helpers.getGreeting();
+  final hour = DateTime.now().hour;
+  final emoji = hour < 12 ? '🌅' : hour < 17 ? '☀️' : '🌙';
+
+  return SliverAppBar(
+    expandedHeight: 230,
+    floating: true,
+    pinned: true,
+    elevation: 0,
+    backgroundColor: theme.primaryColor,
+    centerTitle: true,
+
+    // simple "AppBar title equivalent"
+    title: const Text(
+      'Home',
+      style: TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+
+    leading: GestureDetector(
+      onTap: () => _scaffoldKey.currentState?.openDrawer(),
+      child: Container(
+        margin: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.2),
+          borderRadius: BorderRadius.circular(14),
+        ),
+        child: const Icon(Icons.menu_rounded, color: Colors.white, size: 22),
+      ),
+    ),
+
+    flexibleSpace: FlexibleSpaceBar(
+      background: Stack(
+        fit: StackFit.expand,
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  theme.primaryColor,
+                  theme.primaryColor.withOpacity(0.8),
+                  theme.primaryColor.withOpacity(0.4),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+          ),
+          Positioned(
+            top: -50,
+            left: -30,
+            child: Container(
+              width: 150,
+              height: 150,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.white.withOpacity(0.05),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: -30,
+            right: -20,
+            child: Container(
+              width: 120,
+              height: 120,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.white.withOpacity(0.08),
+              ),
+            ),
+          ),
+          SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(60, 12, 24, 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                '$greeting ',
+                                style: const TextStyle(
+                                  color: Colors.white70,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              Text(
+                                emoji,
+                                style: const TextStyle(fontSize: 18),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 4),
+                          const Text(
+                            'Let\'s make today amazing!',
+                            style: TextStyle(
+                              color: Colors.white54,
+                              fontSize: 12,
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                             ),
                           ),
                         ],
                       ),
+<<<<<<< HEAD
                     ),
                   ],
                 ),
@@ -588,6 +703,105 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 
+=======
+                      Row(
+                        children: [
+                          _buildPremiumHeaderIcon(Icons.search_rounded, () {
+                            setState(() => _isSearching = true);
+                          }),
+                          const SizedBox(width: 10),
+                          _buildPremiumHeaderIcon(Icons.notifications_outlined, () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => const NotificationHistoryScreen(),
+                              ),
+                            );
+                          }),
+                          const SizedBox(width: 10),
+                          _buildPremiumHeaderIcon(Icons.settings_rounded, () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => const SettingsScreen(),
+                              ),
+                            );
+                          }),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.15),
+                      borderRadius: BorderRadius.circular(24),
+                      border: Border.all(
+                        color: Colors.white.withOpacity(0.2),
+                        width: 1,
+                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 56,
+                          height: 56,
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [
+                                Colors.white.withOpacity(0.3),
+                                Colors.white.withOpacity(0.1),
+                              ],
+                            ),
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white.withOpacity(0.4),
+                              width: 2,
+                            ),
+                          ),
+                          child: const Center(
+                            child: Text('👤', style: TextStyle(fontSize: 28)),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                'Your Daily Routines',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 0.5,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                'Stay consistent, stay productive! ✨',
+                                style: TextStyle(
+                                  color: Colors.white.withOpacity(0.8),
+                                  fontSize: 13,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
+}
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
   Widget _buildPremiumHeaderIcon(IconData icon, VoidCallback onTap) {
     return GestureDetector(
       onTap: onTap,
@@ -702,7 +916,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 child: FadeTransition(
                   opacity: _fadeAnim,
                   child: Padding(
+<<<<<<< HEAD
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+=======
+                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                     child: RoutineCard(
                       routine: routine,
                       onTap: () async {
@@ -1267,4 +1485,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _slideController.dispose();
     super.dispose();
   }
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41

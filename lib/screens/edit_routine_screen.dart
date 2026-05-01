@@ -33,7 +33,12 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
   void initState() {
     super.initState();
     _titleController = TextEditingController(text: widget.routine.title);
+<<<<<<< HEAD
     _descriptionController = TextEditingController(text: widget.routine.description);
+=======
+    _descriptionController =
+        TextEditingController(text: widget.routine.description);
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
     _selectedCategory = widget.routine.category;
     _startTime = widget.routine.startTime;
     _endTime = widget.routine.endTime;
@@ -47,6 +52,10 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Edit Routine'),
+<<<<<<< HEAD
+=======
+        centerTitle: true, // ✅ added
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
         actions: [
           TextButton(
             onPressed: _isSaving ? null : _updateRoutine,
@@ -63,22 +72,35 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                     'Update',
                     style: TextStyle(
                       color: Colors.white,
+<<<<<<< HEAD
                       fontWeight: FontWeight.bold,
+=======
+                      fontWeight: FontWeight.w600, // ✅ slight tweak
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                     ),
                   ),
           ),
         ],
       ),
       body: SingleChildScrollView(
+<<<<<<< HEAD
         padding: const EdgeInsets.all(16),
+=======
+        padding: const EdgeInsets.all(18), // ✅ spacing tweak
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
         child: Form(
           key: _formKey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+<<<<<<< HEAD
               // Title
               _buildSectionTitle('Routine Title'),
               const SizedBox(height: 8),
+=======
+              _buildSectionTitle('Routine Title'),
+              const SizedBox(height: 10), // ✅ spacing tweak
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
               TextFormField(
                 controller: _titleController,
                 decoration: InputDecoration(
@@ -95,11 +117,19 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                 },
                 textCapitalization: TextCapitalization.words,
               ),
+<<<<<<< HEAD
               const SizedBox(height: 24),
 
               // Description
               _buildSectionTitle('Description'),
               const SizedBox(height: 8),
+=======
+
+              const SizedBox(height: 22),
+
+              _buildSectionTitle('Description'),
+              const SizedBox(height: 10),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
               TextFormField(
                 controller: _descriptionController,
                 maxLines: 3,
@@ -119,11 +149,19 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                   return null;
                 },
               ),
+<<<<<<< HEAD
               const SizedBox(height: 24),
 
               // Category
               _buildSectionTitle('Category'),
               const SizedBox(height: 8),
+=======
+
+              const SizedBox(height: 22),
+
+              _buildSectionTitle('Category'),
+              const SizedBox(height: 10),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
               DropdownButtonFormField<String>(
                 value: _selectedCategory,
                 decoration: InputDecoration(
@@ -155,17 +193,29 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                   setState(() => _selectedCategory = value!);
                 },
               ),
+<<<<<<< HEAD
               const SizedBox(height: 24),
 
               // Time Range
               _buildSectionTitle('Time Range'),
               const SizedBox(height: 8),
+=======
+
+              const SizedBox(height: 22),
+
+              _buildSectionTitle('Time Range'),
+              const SizedBox(height: 10),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
               Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Padding(
+<<<<<<< HEAD
                   padding: const EdgeInsets.all(8),
+=======
+                  padding: const EdgeInsets.all(10), // ✅ small tweak
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                   child: Row(
                     children: [
                       Expanded(
@@ -187,17 +237,29 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                   ),
                 ),
               ),
+<<<<<<< HEAD
               const SizedBox(height: 24),
 
               // Days Selection
               _buildSectionTitle('Select Days'),
               const SizedBox(height: 8),
+=======
+
+              const SizedBox(height: 22),
+
+              _buildSectionTitle('Select Days'),
+              const SizedBox(height: 10),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
               Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Padding(
+<<<<<<< HEAD
                   padding: const EdgeInsets.all(8),
+=======
+                  padding: const EdgeInsets.all(10),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                   child: Wrap(
                     spacing: 8,
                     runSpacing: 4,
@@ -207,11 +269,17 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                         selected: _selectedDays.contains(day),
                         onSelected: (selected) {
                           setState(() {
+<<<<<<< HEAD
                             if (selected) {
                               _selectedDays.add(day);
                             } else {
                               _selectedDays.remove(day);
                             }
+=======
+                            selected
+                                ? _selectedDays.add(day)
+                                : _selectedDays.remove(day);
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                           });
                         },
                       );
@@ -219,11 +287,19 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                   ),
                 ),
               ),
+<<<<<<< HEAD
               const SizedBox(height: 24),
 
               // Notification Settings
               _buildSectionTitle('Notification Settings'),
               const SizedBox(height: 8),
+=======
+
+              const SizedBox(height: 22),
+
+              _buildSectionTitle('Notification Settings'),
+              const SizedBox(height: 10),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
               Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
@@ -240,7 +316,12 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                     ),
                     if (_notificationEnabled)
                       Padding(
+<<<<<<< HEAD
                         padding: const EdgeInsets.fromLTRB(72, 0, 16, 16),
+=======
+                        padding:
+                            const EdgeInsets.fromLTRB(72, 0, 16, 16),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                         child: DropdownButtonFormField<int>(
                           value: _notificationBefore,
                           decoration: InputDecoration(
@@ -249,7 +330,12 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
+<<<<<<< HEAD
                           items: AppConstants.notificationBeforeOptions
+=======
+                          items: AppConstants
+                              .notificationBeforeOptions
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                               .map((minutes) {
                             return DropdownMenuItem(
                               value: minutes,
@@ -264,9 +350,15 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                   ],
                 ),
               ),
+<<<<<<< HEAD
               const SizedBox(height: 32),
 
               // Update Button
+=======
+
+              const SizedBox(height: 28),
+
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
               ElevatedButton(
                 onPressed: _isSaving ? null : _updateRoutine,
                 style: ElevatedButton.styleFrom(
@@ -279,7 +371,14 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
                     ? const CircularProgressIndicator()
                     : const Text(
                         'Update Routine',
+<<<<<<< HEAD
                         style: TextStyle(fontSize: 18),
+=======
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600, // ✅ tweak
+                        ),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
                       ),
               ),
             ],
@@ -303,10 +402,15 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
       String label, TimeOfDay time, Function(TimeOfDay) onTimeChanged) {
     return InkWell(
       onTap: () async {
+<<<<<<< HEAD
         final picked = await showTimePicker(
           context: context,
           initialTime: time,
         );
+=======
+        final picked =
+            await showTimePicker(context: context, initialTime: time);
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
         if (picked != null) onTimeChanged(picked);
       },
       borderRadius: BorderRadius.circular(12),
@@ -314,7 +418,12 @@ class _EditRoutineScreenState extends State<EditRoutineScreen> {
         padding: const EdgeInsets.all(12),
         child: Column(
           children: [
+<<<<<<< HEAD
             Text(label, style: TextStyle(fontSize: 12, color: Colors.grey[600])),
+=======
+            Text(label,
+                style: TextStyle(fontSize: 12, color: Colors.grey[600])),
+>>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
             const SizedBox(height: 4),
             Text(
               Helpers.formatTimeOfDay(time),
