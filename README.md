@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # diyo
 
 A new Flutter project.
@@ -20,38 +19,20 @@ For help getting started with Flutter development, view the
 
 ## 📌 Overview
 
-The **Daily Routine Manager App** is a Flutter-based mobile application designed to help users plan, manage, and track their daily activities efficiently. The application emphasizes usability, clean architecture, and real-world functionality by integrating persistent storage, API communication, and device-level features.
+The Daily Routine Manager App is a Flutter-based mobile application designed to help users plan, manage, and track their daily activities efficiently. The application emphasizes usability, clean architecture, and real-world functionality by integrating persistent storage, API communication, and device-level features.
 
 This project was developed as part of an academic requirement to demonstrate core mobile application development concepts using Flutter.
-=======
-# 📱diyo : Daily Routine Manager App
-
-## 📌 Overview
-
-The **Daily Routine Manager App** is a Flutter-based mobile application designed to help users efficiently plan, manage, and track their daily activities. It emphasizes productivity, structured navigation, clean architecture, and real-world mobile development practices.
-
-This project was developed as part of an academic requirement to demonstrate key concepts in **mobile application development using Flutter**, including state management, persistent storage, API integration, and device feature utilization.
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 
 ---
 
 ## 🎯 Key Objectives
 
-<<<<<<< HEAD
 * Design a user-friendly mobile interface
 * Implement structured navigation across multiple screens
 * Apply scalable state management techniques
 * Persist user data locally
 * Integrate external APIs and handle asynchronous data
 * Utilize device features such as notifications
-=======
-* Develop an intuitive and user-friendly mobile interface
-* Implement structured multi-screen navigation
-* Apply scalable state management using Provider
-* Enable local data persistence for routines
-* Integrate external APIs for dynamic content
-* Utilize device features such as notifications and alarms
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 
 ---
 
@@ -60,7 +41,6 @@ This project was developed as part of an academic requirement to demonstrate key
 ### 🧩 User Interface
 
 * Clean and responsive UI design
-<<<<<<< HEAD
 * Custom reusable widgets
 * Form handling with validation
 * Feedback mechanisms:
@@ -74,55 +54,27 @@ This project was developed as part of an academic requirement to demonstrate key
 
 * Multi-screen navigation using Flutter Navigator
 * Seamless transitions between:
-=======
-* Reusable custom widgets
-* Form validation for user input
-* User feedback via Snackbars and Dialogs
-
----
-
-### 🔄 Navigation System
-
-* Flutter Navigator-based multi-screen flow
-* Smooth transitions between:
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 
   * Home Screen
   * Add Routine Screen
   * Edit Routine Screen
-<<<<<<< HEAD
   * Detail Screen
 * Data passed between screens efficiently
-=======
-  * Routine Detail Screen
-* Efficient data transfer between screens
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 
 ---
 
 ### 🧠 State Management
 
-<<<<<<< HEAD
-* Local state managed using `setState()`
-* Global state managed using **Provider**
+* Local state managed using setState()
+* Global state managed using Provider
 * Centralized data flow for routines and UI updates
-=======
-* Local state handled using `setState`
-* Global state managed using **Provider**
-* Centralized and reactive data flow across the application
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 
 ---
 
 ### 💾 Data Persistence
 
-<<<<<<< HEAD
 * Local database/file storage implementation
 * CRUD operations:
-=======
-* Local database / file-based storage
-* Full CRUD functionality:
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 
   * Create routines
   * Read routines
@@ -133,7 +85,6 @@ This project was developed as part of an academic requirement to demonstrate key
 
 ### 🌐 API Integration
 
-<<<<<<< HEAD
 * REST API consumption
 * JSON parsing and data modeling
 * Error handling and loading states
@@ -144,24 +95,11 @@ This project was developed as part of an academic requirement to demonstrate key
 
 * Notification and/or alarm integration
 * Permission handling for device access
-=======
-* REST API integration for dynamic content
-* JSON parsing and model mapping
-* Robust error handling and loading states
 
 ---
 
-### 📱 Device Integration
+## 🏗 Project Structure
 
-* Local notifications and alarms
-* Permission handling for device services
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
-
----
-
-## 🏗️ Project Structure
-
-```bash
 daily_routine_app/
 ├── lib/
 │   ├── main.dart
@@ -181,10 +119,7 @@ daily_routine_app/
 │   │   ├── database_service.dart
 │   │   ├── api_service.dart
 │   │   └── notification_service.dart
-<<<<<<< HEAD
 │   │
-=======
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 │   ├── widgets/
 │   │   ├── routine_card.dart
 │   │   ├── custom_app_bar.dart
@@ -201,29 +136,19 @@ daily_routine_app/
 ├── android/
 ├── ios/
 ├── pubspec.yaml
-<<<<<<< HEAD
 ├── README.md
 └── app-release.apk
 
-=======
-└── app-release.apk
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
-```
 
 ---
 
 ## ⚙️ Tech Stack
 
-* **Framework:** Flutter
-* **Language:** Dart
-* **State Management:** Provider
-<<<<<<< HEAD
-* **Storage:** Local database / file system
-* **API Handling:** HTTP / REST
-=======
-* **Local Storage:** SQLite / File System
-* **Networking:** REST API (HTTP)
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
+* Framework: Flutter
+* Language: Dart
+* State Management: Provider
+* Storage: Local database / file system
+* API Handling: HTTP / REST
 
 ---
 
@@ -239,46 +164,30 @@ daily_routine_app/
 
 ### Installation
 
-```bash
 git clone https://github.com/Ninoki78/daily-routine-manager.git
 cd daily_routine_app
 flutter pub get
 flutter run
-```
 
 ---
 
 ## 📦 Build APK
 
-```bash
 flutter build apk --release
-```
 
-**Output Location:**
+Output Location:
 
-```
 build/app/outputs/flutter-apk/app-release.apk
-```
 
 ---
 
 ## 🧪 Testing Strategy
 
-<<<<<<< HEAD
 * Manual testing on emulator and real device
 * Validation of user inputs
 * API response verification
 * Edge case handling:
-
-  * Empty data states
-=======
-* Manual testing on emulator and real devices
-* Input validation testing
-* API response verification
-* Edge case handling:
-
-  * Empty states
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
+* Empty data states
   * Network failures
   * Invalid inputs
 
@@ -286,32 +195,36 @@ build/app/outputs/flutter-apk/app-release.apk
 
 ## 🎥 Demo & Presentation
 
-<<<<<<< HEAD
-👉 **Presentation Video Link:**
-[]
+👉 Presentation Video Link:
+[https://www.loom.com/share/efed7e60ccf34bf88c66bedefdd5121e]
+👉 APP demonestration Video Link:
+[https://www.loom.com/share/a984c5ebff1640ed8a63ca9cb2ccdd2d]
 
-👉 **APK Download:**
-[]
+## 📦 APK Download
 
-=======
-* 🎬 **Presentation Video:** [Add Link Here]
-* 📱 **APK Download:** [Add Link Here]
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
+👉 **Download the latest APK:** [app-release.apk](app-release.apk)
 
----
+### Installation Instructions:
+1. Download the `app-release.apk` file from the link above
+2. On your Android device, go to **Settings > Security**
+3. Enable **"Install from Unknown Sources"**
+4. Open the downloaded APK file
+5. Tap **Install**
+6. Open the app and start managing your daily routines!
 
-## 👥 Team Contributions
+> ⚠️ **Note:** The APK is built for Android devices running Android 5.0 (API 21) or higher.
 
-<<<<<<< HEAD
+
+
 ## 👥 Team Contributions
 
 | Member              | ID       | Responsibility                  |
 | ------------------- | -------- |-------------------------------- |
-| Mesnanat Teshager   |          | UI Screens and Design          |
-| Tinsaye Gezahegn    | 1005/15  | Navigation & State Management  |
-| Eldana Tesfahun     | 0357/15  | Database & Data Persistence    |
+| Mesnanat Teshager   | 0736/15  | UI Screens and Design           |
+| Tinsaye Gezahegn    | 1005/15  | Navigation & State Management   |
+| Eldana Tesfahun     | 0357/15  | Database & Data Persistence     |
 | Nebil Abdo          | 0812/15  | Notifications & Device Features |
-|                     |          | API Integration and Utilities  |
+| Kebrom Kelelegn     | 1127/15  | API Integration and Utilities    |
 ---
 
 ## 🧭 Navigation & State Flow (Highlight Section)
@@ -327,31 +240,6 @@ The application follows a structured flow:
 This ensures:
 
 * Consistent data across screens
-=======
-| Name              | ID      | Responsibility                  |
-| ----------------- | ------- | ------------------------------- |
-| Mesnanat Teshager |         | UI Screens and Design           |
-| Tinsaye Gezahegn  | 1005/15 | Navigation & State Management   |
-| Eldana Tesfahun   | 0357/15 | Database & Data Persistence     |
-| Nebil Abdo        | 0812/15 | Notifications & Device Features |
-|                   |         | API Integration & Utilities     |
-
----
-
-## 🧭 Architecture: Navigation & State Flow
-
-The application follows a structured and reactive flow:
-
-1. User interacts with UI (e.g., adds a routine)
-2. Action is handled by Provider
-3. Provider updates application state
-4. Data is persisted in local storage
-5. UI automatically rebuilds using listeners
-
-This ensures:
-
-* Consistent state across screens
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 * Scalable architecture
 * Clean separation of concerns
 
@@ -359,49 +247,36 @@ This ensures:
 
 ## ⚠️ Challenges & Solutions
 
-<<<<<<< HEAD
 | Challenge               | Solution                                   |
 | ----------------------- | ------------------------------------------ |
 | State synchronization   | Implemented Provider for centralized state |
 | Navigation data passing | Used constructor-based argument passing    |
 | API errors              | Added proper error handling & UI feedback  |
-=======
-| Challenge               | Solution                                    |
-| ----------------------- | ------------------------------------------- |
-| State synchronization   | Implemented Provider for centralized state  |
-| Navigation data passing | Constructor-based argument passing          |
-| API failures            | Added error handling and fallback UI states |
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 
 ---
 
 ## 📌 Future Improvements
 
 * Cloud synchronization
-<<<<<<< HEAD
 * User authentication
 * Advanced analytics (routine tracking insights)
-=======
-* User authentication system
-* Advanced analytics dashboard
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
 * Cross-platform enhancements
 
 ---
 
 ## 📎 Submission Checklist
 
-* ✔ Source Code (GitHub Repository)
-* ✔ APK File
-* ✔ Documentation (README)
-* ✔ Demo Video
+* ✔️ Source Code (GitHub Repository)
+* ✔️ APK File
+* ✔️ Documentation (README)
+* ✔️ Demo Video
 
 ---
 
 ## 📜 License
 
-<<<<<<< HEAD
 This project is for educational purposes only.
-=======
-This project is developed for **educational purposes only**.
->>>>>>> d828e5ed218e0cc7ab2864fd35371f652e43ff41
+
+docs.flutter.dev (https://docs.flutter.dev/get-started/learn-flutter)
+Learn Flutter
+Find everything you need to start building Flutter apps.
