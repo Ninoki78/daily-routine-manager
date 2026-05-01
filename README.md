@@ -102,43 +102,41 @@ This project was developed as part of an academic requirement to demonstrate cor
 
 daily_routine_app/
 ├── lib/
-│   ├── main.dart
-│   ├── models/
-│   │   └── routine.dart
-│   ├── providers/
-│   │   ├── routine_provider.dart
-│   │   └── theme_provider.dart
-│   ├── screens/
-│   │   ├── home_screen.dart
-│   │   ├── add_routine_screen.dart
-│   │   ├── edit_routine_screen.dart
-│   │   ├── routine_detail_screen.dart
-│   │   ├── settings_screen.dart
-│   │   └── notification_history_screen.dart
-│   ├── services/
-│   │   ├── database_service.dart
-│   │   ├── api_service.dart
-│   │   └── notification_service.dart
-│   │
-│   ├── widgets/
-│   │   ├── routine_card.dart
-│   │   ├── custom_app_bar.dart
-│   │   ├── loading_indicator.dart
-│   │   ├── empty_state.dart
-│   │   └── error_state.dart
-│   └── utils/
-│       ├── constants.dart
-│       ├── helpers.dart
-│       └── theme.dart
+│ ├── main.dart
+│ ├── models/
+│ │ └── routine.dart
+│ ├── providers/
+│ │ ├── routine_provider.dart
+│ │ └── theme_provider.dart
+│ ├── screens/
+│ │ ├── home_screen.dart
+│ │ ├── add_routine_screen.dart
+│ │ ├── edit_routine_screen.dart
+│ │ ├── routine_detail_screen.dart
+│ │ ├── settings_screen.dart
+│ │ └── notification_history_screen.dart
+│ ├── services/
+│ │ ├── database_service.dart
+│ │ ├── api_service.dart
+│ │ └── notification_service.dart
+│ ├── widgets/
+│ │ ├── routine_card.dart
+│ │ ├── custom_app_bar.dart
+│ │ ├── loading_indicator.dart
+│ │ ├── empty_state.dart
+│ │ └── error_state.dart
+│ └── utils/
+│ ├── constants.dart
+│ ├── helpers.dart
+│ └── theme.dart
 ├── assets/
-│   └── icon/
-│       └── app_icon.png
+│ └── icon/
+│ └── app_icon.png
 ├── android/
 ├── ios/
 ├── pubspec.yaml
 ├── README.md
 └── app-release.apk
-
 
 
 ---
@@ -198,6 +196,7 @@ build/app/outputs/flutter-apk/app-release.apk
 
 👉 Presentation Video Link:
 [https://www.loom.com/share/efed7e60ccf34bf88c66bedefdd5121e]
+
 👉 APP demonestration Video Link:
 [https://www.loom.com/share/a984c5ebff1640ed8a63ca9cb2ccdd2d]
 
