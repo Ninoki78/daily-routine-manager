@@ -99,7 +99,7 @@ This project was developed as part of an academic requirement to demonstrate cor
 ---
 
 ## 🏗 Project Structure
-
+ ```
 daily_routine_app/
 ├── lib/
 │ ├── main.dart
@@ -137,7 +137,7 @@ daily_routine_app/
 ├── pubspec.yaml
 ├── README.md
 └── app-release.apk
-
+ ```
 
 ---
 
